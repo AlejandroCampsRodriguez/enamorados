@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enamorado - Servicios Exclusivos</title>
+    <!-- Tailwind CSS para diseño moderno y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Una elegante para títulos y otra limpia para cuerpo -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome para iconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --romance-red: #8b0000;
+            --passion-gradient: linear-gradient(135deg, #4a0404 0%, #8b0000 50%, #ff4d4d 100%);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a0202;
+            color: #fff1f1;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Fondo de corazones flechados animados */
+        .heart-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.15;
+        }
+
+        .floating-heart {
+            position: absolute;
+            color: #ff4d4d;
+            animation: float 15s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(110vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+        }
+
+        /* Estilo para la imagen principal con efecto suave */
+        .facade-img {
+            box-shadow: 0 0 50px rgba(139, 0, 0, 0.5);
+            border: 2px solid rgba(255, 77, 77, 0.3);
+            transition: transform 0.5s ease;
+        }
+        
+        .facade-img:hover {
+            transform: scale(1.02);
+        }
+
+        .btn-contact {
+            background: var(--passion-gradient);
+            transition: all 0.3s ease;
+        }
+
+        .btn-contact:hover {
+            box-shadow: 0 0 20px #ff4d4d;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fondo de Corazones (Generados por script abajo) -->
+    <div class="heart-bg" id="heartContainer"></div>
+
+    <!-- HEADER -->
+    <header class="w-full py-8 text-center bg-gradient-to-b from-black to-transparent sticky top-0 z-50">
+        <h1 class="text-5xl md:text-7xl font-bold tracking-widest text-red-600 drop-shadow-[0_2px_10px_rgba(255,0,0,0.8)] italic">
+            Enamorado
+        </h1>
+        <p class="text-sm md:text-lg uppercase tracking-[0.3em] text-red-300 mt-2">Discreción • Pasión • Intimidad</p>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container mx-auto px-6 py-12 flex flex-col items-center">
+        
+        <!-- Sección Hero con Fachada -->
+        <section class="w-full max-w-5xl mb-16 text-center">
+            <div class="relative group">
+                <!-- Imagen de Fachada (Placeholder de alta calidad) -->
+                <img src="https://images.unsplash.com/photo-1549294413-26f195af00c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
+                     alt="Fachada de la Casa de Citas" 
+                     class="facade-img w-full h-[400px] md:h-[600px] object-cover rounded-2xl mb-8">
+                
+                <div class="absolute inset-0 bg-black/40 rounded-2xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <p class="text-2xl italic font-light">Un refugio diseñado para tus deseos más profundos...</p>
+                </div>
+            </div>
+
+            <div class="max-w-3xl mx-auto mt-12 space-y-6">
+                <h2 class="text-4xl text-red-500 italic">El arte de la seducción en un solo lugar</h2>
+                <p class="text-lg leading-relaxed text-gray-300">
+                    Bienvenidos a <span class="text-red-400 font-semibold">Enamorado</span>, el espacio donde el tiempo se detiene y la conexión humana fluye. Nuestras suites están ambientadas para brindar la atmósfera perfecta de afecto, romance y erotismo. Cada rincón ha sido pensado para el confort, la higiene y la privacidad total entre un hombre y una mujer.
+                </p>
+                
+                <!-- Servicios rápidos -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
+                    <div class="p-6 bg-white/5 rounded-xl border border-red-900/30">
+                        <i class="fas fa-heart text-red-500 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-xl mb-2">Ambiente Erótico</h3>
+                        <p class="text-sm text-gray-400">Luces tenues y aromas que despiertan los sentidos.</p>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-xl border border-red-900/30">
+                        <i class="fas fa-shield-alt text-red-500 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-xl mb-2">Privacidad Total</h3>
+                        <p class="text-sm text-gray-400">Entradas discretas y atención personalizada sin interrupciones.</p>
+                    </div>
+                    <div class="p-6 bg-white/5 rounded-xl border border-red-900/30">
+                        <i class="fas fa-wine-glass-alt text-red-500 text-3xl mb-4"></i>
+                        <h3 class="font-bold text-xl mb-2">Servicio Premium</h3>
+                        <p class="text-sm text-gray-400">Bebidas, música personalizada y atención al detalle.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón de acción -->
+        <section class="mb-20">
+            <a href="https://wa.me/TU_NUMERO" class="btn-contact px-10 py-4 rounded-full text-white font-bold text-xl inline-flex items-center gap-3">
+                <i class="fab fa-whatsapp"></i> Reservar Mi Momento
+            </a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-full py-12 bg-black/80 border-t border-red-900/50">
+        <div class="container mx-auto px-6 flex flex-col items-center">
+            
+            <!-- Iconos Sociales -->
+            <div class="flex gap-8 mb-8">
+                <a href="https://wa.me/TU_NUMERO" class="text-3xl text-gray-400 hover:text-green-500 transition-colors" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:tuemail@gmail.com" class="text-3xl text-gray-400 hover:text-red-500 transition-colors" title="Gmail">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a href="https://facebook.com/tuperfil" class="text-3xl text-gray-400 hover:text-blue-600 transition-colors" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-gray-500 text-sm">
+                <p class="mb-2">&copy; 2026 <span class="text-red-800">Enamorado</span> - Todos los derechos reservados.</p>
+                <p class="italic">"Donde el amor y el deseo se encuentran."</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para generar corazones flechados aleatorios -->
+    <script>
+        const container = document.getElementById('heartContainer');
+        const heartCount = 20;
+
+        for (let i = 0; i < heartCount; i++) {
+            const heart = document.createElement('div');
+            heart.className = 'floating-heart';
+            // Icono de corazón flechado (usando FontAwesome)
+            heart.innerHTML = '<i class="fas fa-heart-circle-bolt"></i>'; 
+            // O un SVG directo de corazón flechado:
+            heart.innerHTML = `
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    <line x1="2" y1="22" x2="22" y2="2" stroke="white" stroke-width="1" />
+                </svg>
+            `;
+            
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+            heart.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            heart.style.animationDelay = Math.random() * 5 + 's';
+            container.appendChild(heart);
+        }
+    </script>
+</body>
+</html>

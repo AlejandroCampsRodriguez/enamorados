@@ -1,0 +1,63 @@
+
+        :root {
+            --romance-red: #8b0000;
+            --passion-gradient: linear-gradient(135deg, #4a0404 0%, #8b0000 50%, #ff4d4d 100%);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a0202;
+            color: #fff1f1;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Fondo de corazones flechados animados */
+        .heart-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.15;
+        }
+
+        .floating-heart {
+            position: absolute;
+            color: #ff4d4d;
+            animation: float 15s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(110vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+        }
+
+        /* Estilo para la imagen principal con efecto suave */
+        .facade-img {
+            box-shadow: 0 0 50px rgba(139, 0, 0, 0.5);
+            border: 2px solid rgba(255, 77, 77, 0.3);
+            transition: transform 0.5s ease;
+        }
+        
+        .facade-img:hover {
+            transform: scale(1.02);
+        }
+
+        .btn-contact {
+            background: var(--passion-gradient);
+            transition: all 0.3s ease;
+        }
+
+        .btn-contact:hover {
+            box-shadow: 0 0 20px #ff4d4d;
+            transform: translateY(-2px);
+        }
+
+        /* Hover overlay for hero image */
+        .hero-overlay { opacity: 0; transition: opacity .5s ease; pointer-events: none; }
+        .hero-group:hover .hero-overlay { opacity: 1; }

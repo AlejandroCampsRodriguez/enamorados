@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enamorado - Servicios Exclusivos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Una elegante para títulos y otra limpia para cuerpo -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome para iconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <link rel="stylesheet" href="./index.css">
+ 
+</head>
+<body>
+
+    <!-- Fondo de Corazones (Generados por script abajo) -->
+    <div class="heart-bg" id="heartContainer"></div>
+
+    <!-- HEADER -->
+    <header class="w-100 py-4 text-center bg-dark text-white sticky-top">
+        <h1 class="display-4 fw-bold text-danger fst-italic">
+            Enamorados
+        </h1>
+        <p class="small text-uppercase text-danger-opacity mt-2">Discreción • Pasión • Intimidad</p>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container py-5 d-flex flex-column align-items-center">
+        
+        <!-- Sección Hero con Fachada -->
+        <section class="w-100 mb-5 text-center">
+            <div class="position-relative hero-group">
+                                <!-- Carousel de Fachada (reemplaza la imagen estática) -->
+                                <div id="carouselExample" class="carousel slide rounded mb-4">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./img/casa_01.jpg"
+                                                     alt="Fachada 1"
+                                                     class="facade-img d-block w-100"
+                                                     style="height:400px; object-fit:cover;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./img/casa_02.jpg"
+                                                     alt="Fachada 2"
+                                                     class="facade-img d-block w-100"
+                                                     style="height:400px; object-fit:cover;">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./img/casa_03.jpg"
+                                                     alt="Fachada 3"
+                                                     class="facade-img d-block w-100"
+                                                     style="height:400px; object-fit:cover;">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+
+                <div class="position-absolute top-0 start-0 w-100 h-100 bg-black bg-opacity-50 rounded d-flex align-items-center justify-content-center hero-overlay">
+                    <p class="h5 fst-italic fw-light text-white">Un refugio diseñado para tus deseos más profundos...</p>
+                </div>
+            </div>
+
+            <div class="mx-auto mt-4" style="max-width:720px;">
+                <h2 class="h2 text-danger fst-italic">El arte de la seducción en un solo lugar</h2>
+                <p class="lead text-muted">
+                    Bienvenidos a <span class="text-red-400 font-semibold">Enamorado</span>, el espacio donde el tiempo se detiene y la conexión humana fluye. Nuestras suites están ambientadas para brindar la atmósfera perfecta de afecto, romance y erotismo. Cada rincón ha sido pensado para el confort, la higiene y la privacidad total entre un hombre y una mujer.
+                </p>
+                
+                <!-- Servicios rápidos -->
+                <div class="row row-cols-1 row-cols-md-3 g-4 pt-4">
+                    <div class="col">
+                        <div class="p-4 rounded border h-100" style="background: rgba(255,255,255,0.03); border-color: rgba(139,0,0,0.3);">
+                            <i class="fas fa-heart text-danger fs-3 mb-3"></i>
+                            <h3 class="fw-bold h5 mb-2">Ambiente Erótico</h3>
+                            <p class="small text-muted">Luces tenues y aromas que despiertan los sentidos.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-4 rounded border h-100" style="background: rgba(255,255,255,0.03); border-color: rgba(139,0,0,0.3);">
+                            <i class="fas fa-shield-alt text-danger fs-3 mb-3"></i>
+                            <h3 class="fw-bold h5 mb-2">Privacidad Total</h3>
+                            <p class="small text-muted">Entradas discretas y atención personalizada sin interrupciones.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-4 rounded border h-100" style="background: rgba(255,255,255,0.03); border-color: rgba(139,0,0,0.3);">
+                            <i class="fas fa-wine-glass-alt text-danger fs-3 mb-3"></i>
+                            <h3 class="fw-bold h5 mb-2">Servicio Premium</h3>
+                            <p class="small text-muted">Bebidas, música personalizada y atención al detalle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón de acción -->
+        <section class="mb-5">
+            <a href="https://wa.me/TU_NUMERO" class="btn btn-contact btn-lg text-white fw-bold d-inline-flex align-items-center gap-2">
+                <i class="fab fa-whatsapp"></i> Reservar Mi Momento
+            </a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 bg-dark text-muted border-top" style="border-color: rgba(139,0,0,0.3);">
+        <div class="container d-flex flex-column align-items-center py-3">
+
+            <!-- Iconos Sociales -->
+            <div class="d-flex gap-3 mb-3">
+                <a href="mailto:usuario@gmail.com" class="text-decoration-none text-muted fs-4" title="Gmail" aria-label="Enviar email a Gmail">
+                    <i class="fab fa-google" style="color:#DB4437"></i>
+                </a>
+                <a href="https://facebook.com/tuperfil" target="_blank" rel="noopener" class="text-decoration-none text-muted fs-4" title="Facebook" aria-label="Ir a Facebook">
+                    <i class="fab fa-facebook-f" style="color:#1877F2"></i>
+                </a>
+                <a href="https://wa.me/TU_NUMERO" target="_blank" rel="noopener" class="text-decoration-none text-muted fs-4" title="WhatsApp" aria-label="Abrir WhatsApp">
+                    <i class="fab fa-whatsapp" style="color:#25D366"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center small text-muted">
+                <p class="mb-1">&copy; 2026 <span class="text-danger">Enamorado</span> - Todos los derechos reservados.</p>
+                <p class="fst-italic">"Donde el amor y el deseo se encuentran."</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para generar corazones flechados aleatorios -->
+    <script>
+        const container = document.getElementById('heartContainer');
+        const heartCount = 20;
+
+        for (let i = 0; i < heartCount; i++) {
+            const heart = document.createElement('div');
+            heart.className = 'floating-heart';
+            // Icono de corazón flechado (usando FontAwesome)
+            heart.innerHTML = '<i class="fas fa-heart-circle-bolt"></i>'; 
+            // O un SVG directo de corazón flechado:
+            heart.innerHTML = `
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    <line x1="2" y1="22" x2="22" y2="2" stroke="white" stroke-width="1" />
+                </svg>
+            `;
+            
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+            heart.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            heart.style.animationDelay = Math.random() * 5 + 's';
+            container.appendChild(heart);
+        }
+    </script>
+</body>
+</html>

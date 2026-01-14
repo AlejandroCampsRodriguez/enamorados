@@ -1,0 +1,155 @@
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    isidro.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .vscode/
+        documentacion/
+        img/
+        index.css
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (master)
+$ git --version
+git version 2.52.0.windows.1
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (master)
+$ git add .
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (master)
+$ git commit -m "salva 2: insercion de bootstrap, carrrusel"
+[master e5df8c9] salva 2: insercion de bootstrap, carrrusel
+ 9 files changed, 235 insertions(+), 190 deletions(-)
+ create mode 100644 .vscode/extensions.json
+ create mode 100644 documentacion/documentacion.docx
+ create mode 100644 img/casa_01.jpg
+ create mode 100644 img/casa_02.jpg
+ create mode 100644 img/casa_03.jpg
+ create mode 100644 img/casas_04.jpg
+ create mode 100644 index.css
+ create mode 100644 index.html
+ delete mode 100644 isidro.html
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (master)
+$ git remote add origin git@github.com:AlejandroCampsRodriguez/enamorados.git
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (master)
+$ git branch -M main
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ git push -u origin main
+The authenticity of host 'github.com (140.82.112.4)' can't be established.
+ED25519 key fingerprint is: SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ ssh -T git@github.com
+git@github.com: Permission denied (publickey).
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ ls ~/.ssh
+known_hosts
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ ssh-keygen -t ed25519 -C "tu_correo_de_github"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/ale/.ssh/id_ed25519):
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ ssh-keygen -t ed25519 -C alexcrw42@gmail.com
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/ale/.ssh/id_ed25519): y\
+Enter passphrase for "y\" (empty for no passphrase):
+Enter same passphrase again:
+Saving key "y\\" failed: Is a directory
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ ls ~/.ssh
+known_hosts
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ ssh-keygen -t ed25519 -C "alexcrw42@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/ale/.ssh/id_ed25519): y
+Enter passphrase for "y" (empty for no passphrase):
+
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ ssh-keygen -t ed25519 -C "alexcrw42@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/ale/.ssh/id_ed25519):
+Enter passphrase for "/c/Users/ale/.ssh/id_ed25519" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/ale/.ssh/id_ed25519
+Your public key has been saved in /c/Users/ale/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:+eVLukh6rB1h0OoCd9NlXvDti03QK8xNwqrsdPKCZNQ alexcrw42@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|          .      |
+|       .   + o   |
+|      ... o * +  |
+|      .+E= = * . |
+|  . ..+ S o = =  |
+|   o oo+ + o = . |
+|    .o.oB o + o  |
+|     ..*+* o .   |
+|      oo+.+..    |
++----[SHA256]-----+
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ ls ~/.ssh
+id_ed25519  id_ed25519.pub  known_hosts
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ ssh -T git@github.com
+git@github.com: Permission denied (publickey).
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ eval "$(ssh-agent -s)"
+Agent pid 329
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ ssh-add ~/.ssh/id_ed25519
+Identity added: /c/Users/ale/.ssh/id_ed25519 (alexcrw42@gmail.com)
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDUShpMJdPbScxBq7h1LJR1JmJ5RAH9HcljWc+/MRoZ5 alexcrw42@gmail.com
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ ssh -T git@github.com
+Hi AlejandroCampsRodriguez! You've successfully authenticated, but GitHub does not provide shell access.
+
+ale@DESKTOP-KJH2S2I MINGW64 /f/PERSONAL/RED/DEVELOPEP/PROYECTOS/023_Prototipos/SPA/amor (main)
+$ git push -u origin main
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (16/16), 467.57 KiB | 3.77 MiB/s, done.
+Total 16 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/AlejandroCampsRodriguez/enamorados/pull/new/main
+remote:
+To github.com:AlejandroCampsRodriguez/enamorados.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.

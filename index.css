@@ -61,3 +61,7 @@
         /* Hover overlay for hero image */
         .hero-overlay { opacity: 0; transition: opacity .5s ease; pointer-events: none; }
         .hero-group:hover .hero-overlay { opacity: 1; }
+
+        .font-bienvenido{
+            color: white;
+        }

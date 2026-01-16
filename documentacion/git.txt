@@ -153,3 +153,104 @@ remote:
 To github.com:AlejandroCampsRodriguez/enamorados.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
+----------CMS--------------------
+
+Sí. Existen servicios **gratuitos que te permiten alojar un CMS o contenido web dinámico**. Aquí tienes opciones categorizadas según lo que buscas:
+
+---
+
+## **1) Hospedaje gratuito con CMS tradicionales (WordPress, Joomla, etc.)**
+
+Estos permiten instalar un CMS completo sin pagar:
+
+* **000webhost** — alojamiento gratuito con soporte para PHP/MySQL (WordPress funciona).
+* **FreeHosting** — PHP + MySQL gratis (limitado, pero útil).
+* **Byet.host** — hosting gratis con instaladores automáticos (WordPress, Joomla).
+* **InfinityFree** — espacio y MySQL gratis, sin anuncios forzados.
+
+**Limitaciones típicas en estos gratuitos:**
+
+* Recursos (CPU, RAM) bajos
+* Límite de espacio/transferencia
+* A menudo sin certificado SSL automático (aunque puedes agregar Let’s Encrypt)
+
+---
+
+## **2) CMS “Headless” o servicios JAMstack gratuitos**
+
+Estos no son CMS con backend en PHP, sino soluciones modernas para contenido con despliegue en la nube:
+
+### **Netlify CMS**
+
+* Guardas contenido en GitHub + Netlify despliega tu sitio automáticamente.
+* Gratis hasta límites altos de ancho de banda.
+
+### **Strapi (deploy en servicios gratuitos)**
+
+* CMS headless open-source.
+* Puedes desplegar backend gratis en servicios como Render, Railway o Fly.io (plan gratuitos).
+
+---
+
+## **3) Hosting gratuito para sitios estáticos + CMS ligero**
+
+Si conviertes tu CMS a contenido estático (como Gatsby, Hugo o Next.js):
+
+* **GitHub Pages** — ideal para contenido estático.
+* **Netlify** — despliegue automático desde Git.
+* **Vercel** — excelente para proyectos JAMstack.
+
+Con estos puedes usar CMS como:
+
+* **Netlify CMS**
+* **Forestry**
+* **Sanity (plan gratuito)**
+* **Contentful (plan gratuito)**
+
+---
+
+## **4) Plataformas que ofrecen CMS + alojamiento todo en uno (plan gratuito)**
+
+| Plataforma                      | CMS integrado / Editor | Hosting gratis            | Notas                      |
+| ------------------------------- | ---------------------- | ------------------------- | -------------------------- |
+| **Wix**                         | Sí (propio)            | Sí                        | Editor visual, dominio Wix |
+| **Weebly**                      | Sí (propio)            | Sí                        | Fácil de usar              |
+| **Google Sites**                | Sí                     | Sí                        | Muy básico                 |
+| **Webflow (plan gratis)**       | Sí                     | Sí (sitio con Webflow.io) | Editor potente             |
+| **WordPress.com (plan gratis)** | WordPress              | Sí                        | Subdominio WordPress.com   |
+
+---
+
+## **Resumen por objetivo**
+
+**Si necesitas CMS clásico (WordPress/Joomla):**
+✔ 000webhost
+✔ InfinityFree
+✔ Byet.host
+
+**Si quieres despliegue fácil con Git y versión:**
+✔ GitHub Pages + Netlify CMS
+✔ Netlify + Headless CMS
+✔ Vercel + Sanity/Contentful
+
+**Si quieres editor visual sin Backend:**
+✔ Wix
+✔ Weebly
+✔ Webflow
+
+---
+
+## **Recomendación rápida según caso**
+
+**1) Quiero un blog o sitio con administración visual (fácil):**
+➡ Usa **Wix o WordPress.com gratis**.
+
+**2) Quiero control total y un CMS real (auto hospedado):**
+➡ Prueba **000webhost** o **InfinityFree** y coloca WordPress.
+
+**3) Quiero sitio moderno con Git y contenido dinámico:**
+➡ **Netlify + Netlify CMS o Sanity/Vercel**.
+
+---
+
+Si me dices qué CMS quieres usar (WordPress, headless como Strapi, o editor visual como Webflow), te doy una ruta paso a paso para desplegarlo gratis.
